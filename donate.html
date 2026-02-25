@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Green Initiative V2 | Donate</title>
+  <link rel="stylesheet" href="assets/style.css"/>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="navbar">
+      <div class="brand"><div class="logo"></div>Green Initiative V2</div>
+      <button class="nav-toggle" id="navToggle">Menu</button>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="activities.html">Activities</a>
+        <a href="programs.html">Programs</a>
+
+        <div class="drop">
+          <button>Portfolio ▾</button>
+          <div class="drop-menu">
+            <a href="portfolio.html">Projects Overview</a>
+            <a href="gallery.html">Gallery</a>
+          </div>
+        </div>
+
+        <a href="contact.html">Contact</a>
+        <a class="active" href="donate.html">Donate</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="hero alt">
+    <div class="hero-inner">
+      <div class="pill">Donate • Pledge • Partnerships</div>
+      <h1>Support climate work that lasts.</h1>
+      <p>
+        This is a prototype pledge form (no payment gateway required for your assignment).
+        You can later connect Stripe/M-Pesa/etc if you want.
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="contact.html">Become a Partner</a>
+        <a class="btn ghost" href="portfolio.html">See Our Work</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <h2>Donate / Get involved</h2>
+      <p>Options for individual donors and institutions.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card col-6">
+        <span class="badge2">Ways to support</span>
+        <h3>Support options</h3>
+        <ul>
+          <li>One-time donation</li>
+          <li>Monthly giving</li>
+          <li>Project sponsorship</li>
+          <li>Corporate partnership</li>
+        </ul>
+      </div>
+
+      <div class="card col-6">
+        <span class="badge2">Prototype form</span>
+        <h3>Donation pledge</h3>
+        <form action="#" method="post">
+          <div>
+            <label for="donor">Name / Organization</label>
+            <input id="donor" name="donor" placeholder="Enter name">
+          </div>
+
+          <div>
+            <label for="amount">Amount (USD/KES)</label>
+            <input id="amount" name="amount" type="number" min="1" placeholder="Enter amount">
+          </div>
+
+          <div>
+            <label for="type">Support type</label>
+            <select id="type" name="type">
+              <option>One-time</option>
+              <option>Monthly</option>
+              <option>Partnership</option>
+              <option>Sponsorship</option>
+            </select>
+          </div>
+
+          <button class="btn primary" type="submit">Submit pledge</button>
+          <p class="help">Prototype only — no server-side processing required.</p>
+        </form>
+      </div>
+
+      <div class="card col-12">
+        <h3>Transparency</h3>
+        <p>
+          We share progress summaries and project updates for donor confidence.
+          View images on the <a href="gallery.html"><b>Gallery</b></a> page.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="card footer-box">
+        <h3>Social media</h3>
+        <p class="small">Facebook • X • Instagram • LinkedIn</p>
+      </div>
+      <div class="card footer-box">
+        <h3>Address</h3>
+        <p class="small">London, United Kingdom (replace with full address)</p>
+      </div>
+      <div class="card footer-box">
+        <h3>Copyright</h3>
+        <p class="small">© <span id="year"></span> Green Initiative V2.</p>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

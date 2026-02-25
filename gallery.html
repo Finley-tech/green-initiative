@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Green Initiative V2 | Gallery</title>
+  <link rel="stylesheet" href="assets/style.css"/>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="navbar">
+      <div class="brand"><div class="logo"></div>Green Initiative V2</div>
+      <button class="nav-toggle" id="navToggle">Menu</button>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="activities.html">Activities</a>
+        <a href="programs.html">Programs</a>
+
+        <div class="drop">
+          <button class="active">Portfolio ▾</button>
+          <div class="drop-menu">
+            <a href="portfolio.html">Projects Overview</a>
+            <a class="active" href="gallery.html">Gallery</a>
+          </div>
+        </div>
+
+        <a href="contact.html">Contact</a>
+        <a href="donate.html">Donate</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="hero alt">
+    <div class="hero-inner">
+      <div class="pill">Gallery • Lightbox Preview</div>
+      <h1>Project gallery.</h1>
+      <p>Click any image to preview it in a modern lightbox.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <h2>Images</h2>
+      <p>Replace these later with your real project photos.</p>
+    </div>
+
+    <div class="gallery">
+      <div class="gitem" data-lightbox>
+        <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=1200&q=60" alt="Solar">
+        <div class="gcap">Clean energy installation</div>
+      </div>
+      <div class="gitem" data-lightbox>
+        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=60" alt="Nature">
+        <div class="gcap">Environmental restoration</div>
+      </div>
+      <div class="gitem" data-lightbox>
+        <img src="https://images.unsplash.com/photo-1520975661595-6453be3f7070?auto=format&fit=crop&w=1200&q=60" alt="Education">
+        <div class="gcap">Education and awareness session</div>
+      </div>
+      <div class="gitem" data-lightbox>
+        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=60" alt="Partners">
+        <div class="gcap">Partner and donor engagement</div>
+      </div>
+      <div class="gitem" data-lightbox>
+        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=60" alt="Planet">
+        <div class="gcap">Climate and sustainability projects</div>
+      </div>
+      <div class="gitem" data-lightbox>
+        <img src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?auto=format&fit=crop&w=1200&q=60" alt="Workshop">
+        <div class="gcap">Community workshop</div>
+      </div>
+      <div class="gitem" data-lightbox>
+        <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=1200&q=60" alt="Water">
+        <div class="gcap">Water resilience initiative</div>
+      </div>
+      <div class="gitem" data-lightbox>
+        <img src="https://images.unsplash.com/photo-1523861751938-1219d3d0f9b1?auto=format&fit=crop&w=1200&q=60" alt="Agriculture">
+        <div class="gcap">Climate-smart agriculture</div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="card footer-box">
+        <h3>Social media</h3>
+        <p class="small">Facebook • X • Instagram • LinkedIn</p>
+      </div>
+      <div class="card footer-box">
+        <h3>Address</h3>
+        <p class="small">London, United Kingdom (replace with full address)</p>
+      </div>
+      <div class="card footer-box">
+        <h3>Copyright</h3>
+        <p class="small">© <span id="year"></span> Green Initiative V2.</p>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <div class="lightbox-inner">
+    <div class="lightbox-bar">
+      <span id="lightboxCap">Preview</span>
+      <button class="lightbox-close" id="lightboxClose">Close</button>
+    </div>
+    <img id="lightboxImg" src="" alt="Preview">
+  </div>
+</div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
